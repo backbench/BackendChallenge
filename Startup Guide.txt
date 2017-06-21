@@ -1,0 +1,30 @@
+Steps to use:-
+
+1. Give the following commands:-
+
+  - npm install-  To install all the dependencies
+  - npm start-  To start the server
+
+2. The server is built on NodeJS so it needs to be installed to run this application.
+
+2. Following end points have been made:-
+    - /stats :-
+           - This end point gives all the stats about the requests made.
+           - It uses GET method to get all the data statistics.
+
+    - /process :-
+
+          - This end point uses GET,POST,PUT and DELETE methods.
+          - GET : This method responds with a json containing all requests made since server startup.
+                It also creates its own get request containing all the specified json data.
+          - POST : This method posts a request to the server with the specified json attributes with each request containing its own id.
+
+    - /process/id :-
+          - GET : This method serves the json response for that id request.
+          - PUT : This method updates the requested id document with the content specified in body with x-wwww-form-urlencoded key value pairs if they are present in the json object.
+          - DELETE : This request deletes the requested object based on its id.
+
+      /stats :-
+            - GET : This method gives all the statistics related to the requests made till the server startup as mentioned in the challenge.
+
+  3. A time delay of 1 second has been given to all the requests which can be changed as per requirements.           
